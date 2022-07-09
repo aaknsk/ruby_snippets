@@ -19,14 +19,7 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"rebornix.Ruby",
-				"donjayamanne.githistory",
-				"ms-azuretools.vscode-docker",
-				"bung87.rails",
-				"castwide.solargraph",
-				"bung87.vscode-gemfile",
-				"wingrunr21.vscode-ruby",
-				"naumovs.color-highlight"
+				"rebornix.Ruby"
 			]
 		}
 	},
