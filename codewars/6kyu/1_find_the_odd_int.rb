@@ -17,6 +17,18 @@ end
 #   number_count.select { |_key, val| val.odd? }.keys.first
 # end
 
+# =============other answers=======
+# clever one
+# def find_it(seq)
+#   seq.reduce(:^)
+# end
+
+# def find_it(seq)
+#   seq.uniq.each do |val|
+#     return val if seq.count(val).odd?
+#   end
+# end
+
 # ==========Test case=================
 describe('Basic tests') do
   Test.assert_equals(find_it([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]), 5)
