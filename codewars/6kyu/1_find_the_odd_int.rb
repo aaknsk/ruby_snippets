@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# 一番最初に評価にヒットした値を返す
+# 一番最初に評価にヒットした値を返す,jsのfindと同じ動作
 # 配列に対して、自身をカウントし、カウント結果が奇数のものを返している
 def find_it(seq)
   seq.detect { |n| seq.count(n).odd? }
