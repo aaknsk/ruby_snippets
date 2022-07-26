@@ -24,11 +24,13 @@ end
 p tower_builder(5)
 
 # ＝＝＝＝＝smart answer=======
-
-s = '1234567890'
-n = 3
-s.scan(/.{1,#{n}}/)
-# => ["123", "456", "789", "0"]
+def towerBuilder(n)
+  (1..n).map do |i|
+    space = ' ' * (n - i)
+    stars = '*' * (i * 2 - 1)
+    space + stars + space
+  end
+end
 
 # ==========Test case=================
 describe 'Solution' do
