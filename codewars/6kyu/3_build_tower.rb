@@ -23,6 +23,15 @@ end
 
 p tower_builder(5)
 
+# ======Clever Answer
+def towerBuilder(n)
+  (1..n).map do |i|
+    space = ' ' * (n - i)
+    stars = '*' * (i * 2 - 1)
+    space + stars + space
+  end
+end
+
 # ＝＝＝＝＝smart answer=======
 
 s = '1234567890'
