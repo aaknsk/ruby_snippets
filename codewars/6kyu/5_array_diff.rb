@@ -2,10 +2,10 @@
 
 def array_diff(a, b)
   a_list = a.map { |val| val }
-  diff = []
   b.each do |num|
-    diff << a_list.delete(num)
+    a_list.delete(num)
   end
+  a_list
 end
 
 # ＝＝＝＝＝smart answer=======
